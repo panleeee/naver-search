@@ -30,7 +30,7 @@ app.post('/search', (req, res) => {
   }, (error, response, body) => {
     if (error) return console.error(error);
 
-    res.json(body);
+    res.send(body);
   });
 });
 
